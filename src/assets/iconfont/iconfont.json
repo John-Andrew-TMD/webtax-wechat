@@ -1,0 +1,93 @@
+{
+  "id": "1498359",
+  "name": "webtax",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "36795",
+      "name": "VIP",
+      "font_class": "vip1",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "577362",
+      "name": "时钟",
+      "font_class": "shizhong",
+      "unicode": "e74f",
+      "unicode_decimal": 59215
+    },
+    {
+      "icon_id": "584012",
+      "name": "感叹号",
+      "font_class": "iconfontgantanhao3",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "651193",
+      "name": "我的会员",
+      "font_class": "wodehuiyuan0101",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "825914",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "1312371",
+      "name": "icon_down-arrow",
+      "font_class": "icon_down-arrow",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "1443690",
+      "name": "svip",
+      "font_class": "svip",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "1624943",
+      "name": "icon_down_arrow",
+      "font_class": "icon_down_arrow",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "7684924",
+      "name": "visits",
+      "font_class": "visits",
+      "unicode": "e6ce",
+      "unicode_decimal": 59086
+    },
+    {
+      "icon_id": "8106245",
+      "name": "close",
+      "font_class": "close",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "8149097",
+      "name": "vip",
+      "font_class": "vip",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "9735821",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    }
+  ]
+}

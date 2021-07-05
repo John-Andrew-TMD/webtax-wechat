@@ -1,0 +1,182 @@
+
+@mixin border1px($pos: (top,right,bottom,left),$color: #dddddd,$type:solid) {
+  position: relative;
+  &::after {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    @each $item in $pos {
+      border-#{$item}: 1Px $type $color;
+      #{$item}: 0;
+    }
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+  .border1px &::after {
+    -webkit-transform: scaleY(0.7);
+    transform: scaleY(0.7);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  .border1px &::after {
+    -webkit-transform: scaleY(0.5); //像素比为2的时候，我们设置缩放为0.5
+    transform: scaleY(0.5);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .border1px &::after {
+    -webkit-transform: scaleY(
+      0.333333
+    ); //像素比为3的时候，我们设置缩放为0.33333
+    transform: scaleY(0.333333);
+  }
+}
+
+// 使用方法
+// @include border1px(bottom,#dddddd);如果想要多边的话可以用类似数组的这种传参方式（[bottom top]）
+
+@mixin vantbd1px($pos: (top,right,bottom,left),$color: #dddddd,$type:solid,$num:1) {
+  position: relative;
+  &::after{
+    position: absolute;
+    box-sizing: border-box;
+    content: ' ';
+    pointer-events: none;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    border: 0 solid $color;
+    transform: scale(0.5);
+    @each $item in $pos {
+      border-#{$item}-width: $num + Px;
+    }
+  }
+}
+
+
+@mixin bd1px($pos: (top,right,bottom,left),$color: #dddddd,$type:solid) {
+  @each $item in $pos {
+    border-#{$item}: 1Px $type $color;
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+    @each $item in $pos {
+      border-#{$item}: 0.7Px $type $color;
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    @each $item in $pos {
+      border-#{$item}: 0.5Px $type $color;
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+    @each $item in $pos {
+      border-#{$item}: 0.5Px $type $color;
+    }
+  }
+}
+
+// 使用方法
+// @include bd1px(bottom,#dddddd);如果想要多边的话可以用类似数组的这种传参方式（[bottom top]）
+// 底部边框
+
+// ----------------------字体适配----------------------------
+@mixin fontSize($font-size) {
+  font-size: $font-size + Px;
+  @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    font-size: $font-size * 2 + Px;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 3) {
+    font-size: $font-size * 3 + Px;
+  }
+}
+
+// 使用方法:@include lineNum(2);
+@mixin lineNum($num: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-line-clamp: $num;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+// 使用方法:@include bg-image('special_1');
+@mixin bg-image($url, $size: cover) {
+  background-image: url($url+'@2x.png');
+  @media screen and (-webkit-min-device-pixel-ratio: 3) {
+    background-image: url($url+'@3x.png');
+  }
+  background-repeat: no-repeat;
+  background-size: $size;
+}
+@mixin imgBg($url, $size: cover) {
+  background-image: url(imgurl($url));
+  background-repeat: no-repeat;
+  background-size: $size;
+  background-position: center center;
+}
+@mixin iconBg($url, $size: cover) {
+  background-image: url(iconurl($url));
+  background-repeat: no-repeat;
+  background-size: $size;
+  background-position: center center;
+}
+
+// 使用方式:
+// input{
+//     @include placeholder(25, #eee, left)
+// }
+// 美化占位符
+@mixin placeholder($fz, $color: #999, $align: left) {
+  &:-moz-placeholder {
+    font-size: $fz;
+    color: $color;
+    text-align: $align;
+  }
+  &:-ms-input-placeholder {
+    font-size: $fz;
+    color: $color;
+    text-align: $align;
+  }
+  &::-webkit-input-placeholder {
+    font-size: $fz;
+    color: $color;
+    text-align: $align;
+  }
+}
+
+@mixin bg_color($color) {
+  background-color: $color !important;
+  border-color: $color !important;
+}
+
+@mixin text_color($color) {
+  color: $color !important;
+}
+@mixin text_light_color($color) {
+  color: $color !important;
+}
+@mixin bg-image($url, $size: cover) {
+  background-image: url($url+'@2x.png');
+  @media screen and (-webkit-min-device-pixel-ratio: 3) {
+    background-image: url($url+'@3x.png');
+  }
+  background-repeat: no-repeat;
+  background-size: $size;
+}
+@mixin norepBg($url, $size: cover) {
+  background-image: url(furl($url));
+  background-repeat: no-repeat;
+  background-size: $size;
+  background-position: center center;
+}
+@mixin iconBg($url, $size: cover) {
+  background-image: url(fnIcon($url));
+  background-repeat: no-repeat;
+  background-size: $size;
+  background-position: center center;
+}

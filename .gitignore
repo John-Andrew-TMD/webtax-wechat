@@ -1,0 +1,34 @@
+.DS_Store
+node_modules
+/dist
+/testDemo
+/tests/e2e/videos/
+/tests/e2e/screenshots/
+
+# local env files
+.env.local
+.env.*.local
+package-lock.json
+yarn.lock
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+* copy.vue
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+wxConfig.js
+config.js
+package-lock.json
+yarn.lock
+/src/utils/wxConfig.js
+build/env.js
+/src/config/config.js
+src/views/questionnaire/components/components/CompInviteCard copy.vue
+oss.config.js

@@ -1,0 +1,317 @@
+@import "~@/scss/base";
+.like-wrapper{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  padding: 18px 0 30px 0;
+}
+.like-num{
+  font-size: 13px;
+}
+.icon-like{
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  margin-right: 5px;
+}
+.user-avator-list{
+  margin-top: 10px;
+}
+.user-avator-img{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.pay-bottom {
+  height: 50px;
+  background-color: #fff;
+  font-size: 12px;
+}
+.icon-click{
+  @include norepBg('icon-like@2x.png');
+}
+.icon-clicked{
+  @include norepBg('icon-liked@2x.png');
+}
+.icon-zan{
+  @include norepBg('icon-zan@2x.png');
+}
+.more-like-icon{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  @include norepBg('more-like-icon@2x.png');
+}
+.tags {
+  font-size: 16px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: bold;
+  color: rgba(51, 51, 51, 1);
+  line-height: 22px;
+  padding: 10px 0;
+}
+.open-slide {
+  font-size: 12px;
+  box-sizing: border-box;
+  color: #999999;
+  transition: all 0.5s;
+  overflow: hidden;
+  padding-bottom: 10px;
+  // border-bottom: 1px solid #EEEEEE; 点赞
+  li{
+    line-height: 20px;
+    a{
+      color:#4C79FE;
+      margin-left: auto;
+    }
+    span{
+      color:#999999;
+      margin-left: auto;
+    }
+  }
+}
+.l-tags::before {
+  width: 2px;
+  height: 16px;
+  position: relative;
+  top: 2px;
+}
+.detail-wrapper {
+  background-color: #fff;
+  padding: 0px 0 10px 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  img {
+    max-width: 100% !important;
+  }
+}
+.pb60 {
+  padding-bottom: 60px;
+}
+.cover-image {
+  width: 100%;
+  display: block;
+}
+.class-tip {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  margin-left: 10px;
+}
+.pay-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.vip-tag {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(226, 181, 137, 1);
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+}
+.show-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+.vip-icon{
+  @include norepBg('vip-show-icon@2x.png');
+}
+.pay-icon {
+  @include norepBg('has-pay-icon@2x.png');
+}
+.pay-tag {
+  padding: 2px 4px;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 89, 72, 1);
+  font-size: 11px;
+  font-weight: 400;
+  color: rgba(255, 89, 72, 1);
+  overflow: hidden;
+}
+.pay-price {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  line-height: 16px;
+  margin-left: 10px;
+}
+.pay-bottom {
+  height: 50px;
+  background-color: #fff;
+  font-size: 12px;
+}
+.apply-member {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  line-height: 20px;
+  text-decoration: underline;
+}
+.buy-btn {
+  width: 168px;
+  height: 33px;
+  line-height: 33px;
+  background: rgba(255, 89, 72, 1);
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+.detail-header {
+  padding: 15px;
+}
+.detail-box {
+  padding: 0 15px;
+}
+.detail-title {
+  font-size: 20px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  line-height: 28px;
+}
+.copy-link-btn {
+  display: inline-block;
+  padding: 5px;
+  border: none;
+  height: 24px;
+  line-height: 14px;
+  text-decoration: underline;
+}
+.detail-auth {
+  background-image: linear-gradient(to right, #ff8351, #ff5948);
+  color: #fff;
+  padding: 16px;
+  margin: 0 0 15px 0;
+  // height:80px;
+  align-items: center;
+  .copy-btn {
+    padding: 0px 15px;
+    height: 28px;
+    line-height: 28px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(255, 89, 72, 1);
+  }
+}
+.icon-lock {
+  width: 22px;
+  height: 22px;
+  margin-right: 6px;
+  @include norepBg("icon-lock@2x.png");
+}
+.icon-gold {
+  width: 22px;
+  height: 22px;
+  margin-right: 6px;
+  @include norepBg("icon-gold-vip@2x.png");
+}
+.live-access {
+  font-size: 16px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+.mt10b15 {
+  margin: 10px 0 15px 0;
+}
+.detail-content {
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  /deep/ img {
+    max-width: 100% !important;
+    height: auto;
+  }
+}
+.annex {
+  border-radius: 4px;
+  // padding: 0px 15px 0 15px;
+  box-sizing: border-box;
+}
+.docitem {
+  padding: 15px 0;
+  @include border1px(bottom);
+  position: relative;
+}
+.docitem:last-child::after {
+  border-bottom: none;
+}
+.close-icon {
+  position: absolute;
+  right: -16px;
+  top: 0px;
+  font-size: 18px;
+  color: $mainColor;
+}
+.type-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+.type-icon--word {
+  @include norepBg("wordicon@2x.png", contain);
+}
+.type-icon--rar {
+  @include norepBg("zpicon@2x.png", contain);
+}
+.type-icon--pdf {
+  @include norepBg("pdf-icon@2x.png", contain);
+}
+.type-icon--xls {
+  @include norepBg("exelicon@2x.png", contain);
+}
+.type-icon--ppt {
+  @include norepBg("ppticon@2x.png", contain);
+}
+.type-icon--other {
+  @include norepBg("orthericon@2x.png", contain);
+}
+.doc_tit {
+  flex: 1;
+  font-size: 14px;
+  font-family: PingFangSC;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  line-height: 22px;
+  @include lineNum(1);
+}
+.v-box {
+  // padding-bottom: 15px;
+}
+.detail-wrapper .video-player {
+  // position: absolute;
+  // top: 74px;
+  // left: 50%;
+  // transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  // border-radius: 6px;
+  overflow: hidden;
+}
+
+.detail-wrapper /deep/ .video-js .vjs-big-play-button {
+  width: 50px !important;
+  height: 50px !important;
+  line-height: 50px !important;
+  border-radius: 50%;
+  margin-left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto !important;
+}

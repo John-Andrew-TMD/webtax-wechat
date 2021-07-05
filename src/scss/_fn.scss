@@ -1,0 +1,13 @@
+// Some Functions
+@function furl($uri){
+  @return $baseResUrl + $uri;
+}
+@function imgurl($uri){
+  @return $baseImgUrl + $uri;
+}
+@function iconurl($uri){
+  @return $baseIconUrl + $uri;
+}
+@function fnIcon($uri){
+  @return $baseIconUrl + $uri;
+}

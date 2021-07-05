@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    li,
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    .box {
+      width: 300px;
+      margin: 100px;
+    }
+
+    .flex-box {
+      display: flex;
+      border: 1px solid #333;
+      background: #eee;
+      border-radius: 5px 5px 0 0;
+      width: 200px;
+      height: 30px;
+      line-height: 30px;
+      position: relative;
+    }
+
+    .flex-box li {
+      position: relative;
+      flex: 1;
+      text-align: center
+    }
+
+    .flex-box li.active {
+      position: relative;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHUAAAAsCAYAAABbhfeDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAvaSURBVHhe7VsJmBTFFc6XGKOieN9HIh6JIIciN0ROI6fgAisKCMgiiMQogmAEb0RAXAwgh8qCEIh4gQHWqHgsIiAIa0AU5Zienp5j57527j/9qqd7ju45doHEmez/ff83O1Wvqqf773r16lXtL9CAokODqEWIBlGLEEUpqr5aQMndRtxwsw53DBWwbXstwuFYvDaOWAyBQBT891b8tIOD2xVBLBKNVxY2ik5UuyOKe8eZmaAyO/fisa3Kg1hUEpY+jUddePF5Hu1u1TObfoMFfLmFRyQQYjaFjKITddFSJ27qwKWISnzhWT08rjCzoU/6nm7TqRuHH/bZmU0ho6hEDbr9uHeMQSUWsc8gAbwgifrBZi/ad1OL2rIdh9kvNYj6s4JHsGP4iFShZLburMfRY5KoYyakuudkjhzNo9buZXaFiv8bUYmHj0jzZav2avcsk9pTP4WMoptTx4zXHoW9yf0apJGqVU9sIbrf5+Y0uN//CaLhKGy2CKo/06P6cx5mcxjR+HJk4WI7WmkESk8+Z4PLJdkMG2VS1RPbipHwx594mE0hoyBF/X6vHWXjDWh2iyRGv4E6bP/UCrcnCq/ZieGjBUUoGn39B3HYs8cfbw1UrHYr9cmkdtS+0FFwolpqIpj+pBUt0+bFHn0N+PRzSbjd3wSYGx09zoi5L5qwe4cT4drE+tNiCWHCBA63dJEi4I7d9Xh8KsfaRUMRGDkfvt0fZFQlLQoABSfqVlG4Xv21ly1Pv2CDwym52Kj48dOPAYS8tex7MihzxB/xYuMmL9au92DLv3zw1HgQCMbw3vsuPDCRR+lIE+OMZ2zwGB3xloWBghN15Ro3WrTVjl4HDBFw8If6Z4QO7zXjj7fxqn7HlunjFoWBghP1tQqX6qHL7NXPgH8fCMYt6w4KsrT6pcCr8iNf3Ornj4IT9fWVLjRtrX7wxNsGGLD/u1RRI+KcaNU5oNvNKQwEYojF1HPl4HukTYB03thGhyeetsWt/guIRBALBiTSPFJHFJyoNGK63q52kcRHppphMklrUYLT7MXSV3h06plqP2acgOrtFvh8qcJmEpV4172muNXJh//992AdNZLRsu9IvDR/5C2qb93a7Hz3bfgrtyDw1VcIWE7cAj6wrQq+f0jXCFR9gWO6MCY+bEHzNqnzaodueryz1oJwfJfFa/XipVmZM0f0Ymzc4EQklHgJMolKnqFsohnho0fU911HEqIOB/wbN2jWE2vuGgLdqb9kNM4u17Txb9nE+tJC3qLKF8lErvEZ0F9xCYTWLSGUjUfth5XxlscHy+A7ofvNr9g1LCUDWdnXewJs5MhuuF1XPV56xQGzJcLqCcsXaUfIySwdpsOebTWIhqV22dzvjGdt8K6qUN13XUkIVu8Df/VVmvX5UmjZjPWlhRMmajqFG29gb+PxQktUAq0hN3/ow6ZKH1uf0vpVBm2K08jVEiid90/gYRSk0T19plXThhIYb6xyw/f2evDX/FaT');
+      /*把这里改成高亮的背景图片*/
+      height: 36px;
+      line-height: 36px;
+      top: -6px;
+      left: -1px;
+      border: 1px solid #333;
+      border-radius: 5px 5px 0 0;
+      border-bottom: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <ul class="flex-box">
+      <li class="active">个人会员</li>
+      <li>企业服务</li>
+    </ul>
+  </div>
+</body>
+
+</html>

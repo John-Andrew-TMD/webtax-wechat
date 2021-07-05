@@ -1,0 +1,134 @@
+img {
+  width: 100%;
+}
+.app-content-wrapper {
+  width: 100%;
+  position: relative;
+  .app-content-title {
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 4px;
+    span {
+      font-size: 18px;
+      line-height: 1;
+      color: #fff;
+      font-weight: 600;
+      border-left: 3px solid #5062FB;
+      padding-left: 10px;
+    }
+  }
+  .app-box {
+    width: 100%;
+    min-height: 261px;
+    background: #1c2d55;
+    border-radius: 8px;
+    // opacity: 0.1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 7% 5.97% 5%;
+    border: 1px solid #233d7b;
+    .right-btn{
+      cursor: pointer;
+    }
+    .right-btn .done {
+      border: 1px solid #ffd68a;
+      color: #ffd68a;
+    }
+    .right-btn .complete {
+      background: linear-gradient(132deg, #ffd07a 0%, #ffe5ae 100%);
+      border: 1px solid rgba(255, 214, 138, 1);
+      color: #333333;
+    }
+    .right-btn .completed {
+      border: 1px solid #66676f;
+      color: #66676f;
+    }
+    .invite_user {
+      .app-left::before {
+        background: url("~@/assets/imgs/questionnaire/menber.png") no-repeat
+          center center;
+        background-size: contain;
+      }
+    }
+    .bind_phone {
+      .app-left::before {
+        background: url("~@/assets/imgs/questionnaire/mobile.png") no-repeat
+          center center;
+        background-size: contain;
+      }
+    }
+    .login_app {
+      .app-left::before {
+        background: url("~@/assets/imgs/questionnaire/login.png") no-repeat
+          center center;
+        background-size: contain;
+      }
+    }
+    li {
+      width: 100%;
+      height: 54px;
+      background: #334266;
+      display: flex;
+      .app-box-wrapper {
+        width: 83.16%;
+        margin-left: auto;
+        display: flex;
+        font-size: 12px;
+        color: #fff;
+        padding: 4% 0;
+        .app-left {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          position: relative;
+          max-width: 54%;
+          .list-title {
+            font-size: 14px;
+          }
+          .list-content {
+            color: #b7bdc9;
+          }
+          &::before {
+            content: "";
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            left: 0;
+            transform: translateX(-141%) translateY(-50%);
+            top: 50%;
+          }
+        }
+
+        .app-right {
+          flex: 1;
+          height: 100%;
+          margin-left: auto;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: space-around;
+          padding-right: 4%;
+          overflow: hidden;
+          .right-btn {
+            width: 85px;
+            height: 30px;
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & > div {
+              border-radius: 12px;
+              text-align: center;
+              width: 68px;
+              height: 24px;
+              padding: 4% 0;
+              float: right;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.app-content-wrapper {
+  width: 100%;
+  padding-top: 64%;
+  background: url("~@/assets/imgs/questionnaire/rule-bg.png") no-repeat center
+    center;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 0px !important;
+  .app-content-rules {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 93px;
+    padding-bottom: 1rem;
+    & > a {
+      color: #fff;
+      font-size: 14px;
+      margin-top: 100px;
+    }
+    .rules-content {
+      min-height: 500px;
+      border-radius: 4px;
+      background-color: #fff;
+      margin-top: 47px;
+      position: relative;
+      color: #555;
+      line-height: 20px;
+      font-size: 14px;
+      padding: 39px 20px;
+      & > ul li {
+        margin-bottom: 30px;
+      }
+      .rules-fixed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 7.619%;
+        transform: translate(0, -50%);
+        background: url("~@/assets/imgs/questionnaire/rule-fixed.png") no-repeat
+          center center;
+        background-size: cover;
+      }
+    }
+  }
+}
+.price-content {
+  width: 100%;
+  padding-top: 80%;
+  background: url("~@/assets/imgs/questionnaire/price-bg.png") no-repeat center
+    center;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 0px !important;
+}
